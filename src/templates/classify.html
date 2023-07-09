@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block navs %}
+<li>
+    <a href="{{ url_for('homepage') }}">Home</a>
+</li>
+<li>
+    <a href="{{ url_for('samples') }}">Sample Data</a>
+</li>
+<li class="active">
+    <a href="{{ url_for('classify') }}">Classify</a>
+</li>
+{% endblock %}
+{% block content %}
+<!-- /////////////////////////////////////////Content -->
+<div id="page-content" class="container">
+    <div class="form-box" style="display:flex;justify-content:center;align-items:center;">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="input_file" class="form-label">Add the image you want to classify</label>
+            <input type="file" name="input_file" id="input_file" class="input_file">
+            <div class="center-btn">
+                <input type="submit" value="Predict" class="btn btn-skin submit-btn"></div>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Mangoly | Mango Disease Classifier</title>
+    <link rel="icon" href="/static/images/pest.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/lightbox.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+</head>
+<body class="index-page">
+<div
+        class="wrap-body">
+    <!-- Intro -->
+    <div id="intro">
+        <span class="line-1">the</span>
+        <span class="line-2">Mango-Ly</span>
+        <span class="line-3">Mango Disease Classifier</span>
+    </div>
+
+    <header
+            id="page-header">
+        <!--Navigation-->
+        <nav id="menu" class="navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <span id="heading" class="visible-xs">Categories</span>
+                        <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-ex1-collapse">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav"> {% block navs %}{% endblock %}
+                            <li>
+                                <a href="#page-footer">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer id="page-footer">
+        <div class="wrap-footer container">
+            <div class="col-12">
+                <div class="contact-info">
+                    <div class="contact-info-wrapper">
+                        <div>
+                            <!-- Address -->
+                            <div class="contact-group">
+                                <span class="adr-heading">Address</span>
+                                <span class="adr-info">99 Mumtaz Hall, UET, Lahore</span>
+                            </div>
+                            <!-- Email -->
+                            <div class="contact-group">
+                                <span class="adr-heading">Email</span>
+                                <span class="adr-info">razanabeel512@gmail.com</span>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Contact -->
+                            <div class="contact-group">
+                                <span class="adr-heading">Phone</span>
+                                <span class="adr-info">+92 300 4755991</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="col-6">
+                <ul class="list-inline social-link">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+</div>
+<!-- .wrap-body -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

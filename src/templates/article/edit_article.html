@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block navs %}
+<li>
+    <a href="{{ url_for('homepage') }}">Home</a>
+</li>
+<li>
+    <a href="{{ url_for('samples') }}">Sample Data</a>
+</li>
+<li class="active">
+    <a href="{{ url_for('classify') }}">Classify</a>
+</li>
+{% endblock %}
+{% block content %}
+<form method="POST" action="/edit_article/{{ article.id }}">
+    <!-- Autres champs du formulaire -->
+    <label for="titre">Titre :</label>
+    <input type="text" id="titre" name="titre" value="{{ article.titre }}" required>
+
+    <label for="introduction">Introduction :</label>
+    <textarea id="introduction" name="introduction" required>{{ article.introduction }}</textarea>
+
+    <!-- Autres champs du formulaire -->
+
+    <button type="submit">Mettre à jour</button>
+</form>
+{% endblock %}

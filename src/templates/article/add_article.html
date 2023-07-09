@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <form method="POST" action="/add_article">
+        <label for="titre">Titre :</label>
+        <input type="text" id="titre" name="titre" required>
+
+        <label for="introduction">Introduction :</label>
+        <textarea id="introduction" name="introduction" required></textarea>
+
+        <label for="manifestation">Manifestation :</label>
+        <textarea id="manifestation" name="manifestation" required></textarea>
+
+        <label for="prevention">Prèvention :</label>
+        <textarea id="prevention" name="prevention" required></textarea>
+
+        <label for="cause">Cause :</label>
+        <textarea id="cause" name="cause" required></textarea>
+
+        <!-- Autres champs du formulaire -->
+        <label for="image">Image :</label>
+        <input type="file" id="image" name="image">
+
+        <label for="audio">Audio :</label>
+        <input type="file" id="audio" name="audio">
+        <button type="submit">Ajouter</button>
+
+    </form>
+</div>
+</body>
+</html>
